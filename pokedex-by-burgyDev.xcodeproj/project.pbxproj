@@ -13,6 +13,7 @@
 		A6CA98731C003394000FD305 /* pokedex_by_burgyDev.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A6CA98711C003394000FD305 /* pokedex_by_burgyDev.xcdatamodeld */; };
 		A6CA98751C003394000FD305 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CA98741C003394000FD305 /* Assets.xcassets */; };
 		A6CA98781C003394000FD305 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CA98761C003394000FD305 /* LaunchScreen.storyboard */; };
+		A6CA98801C003D45000FD305 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = A6CA987F1C003D45000FD305 /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A6CA98741C003394000FD305 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6CA98771C003394000FD305 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A6CA98791C003394000FD305 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6CA987F1C003D45000FD305 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				A6CA98761C003394000FD305 /* LaunchScreen.storyboard */,
 				A6CA98791C003394000FD305 /* Info.plist */,
 				A6CA98711C003394000FD305 /* pokedex_by_burgyDev.xcdatamodeld */,
+				A6CA987F1C003D45000FD305 /* pokemon.csv */,
 			);
 			path = "pokedex-by-burgyDev";
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				A6CA98781C003394000FD305 /* LaunchScreen.storyboard in Resources */,
 				A6CA98751C003394000FD305 /* Assets.xcassets in Resources */,
+				A6CA98801C003D45000FD305 /* pokemon.csv in Resources */,
 				A6CA98701C003394000FD305 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,6 +294,7 @@
 				A6CA987E1C003394000FD305 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
