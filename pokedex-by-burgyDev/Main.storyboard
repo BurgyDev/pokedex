@@ -292,19 +292,19 @@
                                         </segments>
                                         <color key="tintColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </segmentedControl>
-                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="0nE-Z2-PeU">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="0nE-Z2-PeU">
                                         <rect key="frame" x="0.0" y="49" width="560" height="120"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="dTD-sy-NcG">
-                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dTD-sy-NcG">
+                                                <rect key="frame" x="0.0" y="0.0" width="98" height="120"/>
                                                 <animations/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="120" id="KmI-pe-yrj"/>
                                                     <constraint firstAttribute="height" constant="120" id="YKh-Cw-1vn"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="M94-hk-AAe">
-                                                <rect key="frame" x="120" y="0.0" width="440" height="120"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="M94-hk-AAe">
+                                                <rect key="frame" x="108" y="0.0" width="453" height="120"/>
                                                 <animations/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -429,7 +429,7 @@
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cTI-NG-Ns7">
                                 <rect key="frame" x="0.0" y="431" width="600" height="33"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next Evolution : Venusaur Lv 32" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2z1-85-lyU">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2z1-85-lyU">
                                         <rect key="frame" x="184" y="3" width="232" height="27"/>
                                         <animations/>
                                         <constraints>
@@ -452,7 +452,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-cQ-JWC">
                                 <rect key="frame" x="0.0" y="472" width="600" height="100"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" translatesAutoresizingMaskIntoConstraints="NO" id="low-ie-4U2">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="low-ie-4U2">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="100"/>
                                         <animations/>
                                         <constraints>
@@ -460,7 +460,7 @@
                                             <constraint firstAttribute="height" constant="100" id="nna-Xa-CCg"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" translatesAutoresizingMaskIntoConstraints="NO" id="4Xj-NW-TSZ">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4Xj-NW-TSZ">
                                         <rect key="frame" x="300" y="0.0" width="300" height="100"/>
                                         <animations/>
                                         <constraints>
@@ -499,6 +499,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="attackLbl" destination="liX-oz-C4y" id="1KX-xh-qcY"/>
                         <outlet property="currentEvoImg" destination="low-ie-4U2" id="Ffy-nX-8KX"/>
                         <outlet property="defenseLbl" destination="4DL-Yb-2dZ" id="giL-4w-vzx"/>
                         <outlet property="descriptionLbl" destination="M94-hk-AAe" id="2W7-MC-BUI"/>
@@ -509,6 +510,7 @@
                         <outlet property="nextEvoImg" destination="4Xj-NW-TSZ" id="UeT-ae-gVd"/>
                         <outlet property="pokedexLbl" destination="YkU-cn-KQk" id="hNJ-X9-JVK"/>
                         <outlet property="typeLbl" destination="v9y-cU-XEr" id="RdF-hY-yH8"/>
+                        <outlet property="weightLbl" destination="6Qs-c5-mhm" id="XE5-yX-vRh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtP-wi-mC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -518,8 +520,6 @@
     </scenes>
     <resources>
         <image name="1" width="120" height="120"/>
-        <image name="2" width="120" height="120"/>
-        <image name="3" width="120" height="120"/>
         <image name="back" width="128" height="128"/>
         <image name="bg" width="1920" height="1200"/>
         <image name="music" width="128" height="128"/>
